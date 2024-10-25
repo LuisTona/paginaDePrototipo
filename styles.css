@@ -1,0 +1,72 @@
+body{
+    font-family: "Inter", sans-serif;
+}
+#head{
+    display: grid;
+    grid-template-columns: 50% 40% 10%;
+    grid-template-rows: 1;
+    background-image: url(./img/Atlas-imago-header_1150x105.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+    /* margin-bottom: 10px; */
+    #menu{
+        width: 25px;
+        justify-self: end;
+        align-self: center;
+        margin-right: 30px;
+        hr{
+            border: 1px solid black;
+        }
+    }
+    
+    #menu:hover{
+        cursor: pointer;
+    }
+    
+    input{
+        width: 250px;
+        height: 20px;
+        align-self: center;
+        justify-self: end;
+        padding-left: 10px;
+    }
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    
+    a:first-child::after{
+        content: " > ";
+    }
+}
+#logo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    button{
+        width: 100%;
+        height: 60%;
+        background-color: rgb(240, 175, 54);
+        text-shadow: 0px 0px 7px white;
+        font-size: 19px;
+        font-weight: bolder;
+        border: none;
+        margin-top: 0px;
+    }
+    button:hover{
+        cursor: pointer;
+        transition: background-color 0.5s, text-shadow 0.5s, color 0.5s;
+        
+        /* background-color: rgb(190, 135, 33); */
+        background-color: rgb(255, 166, 0);
+        text-shadow: 0px 0px 7px rgb(236, 150, 150);
+        color: rgb(34, 23, 23);
+    }
+}
